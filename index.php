@@ -4,7 +4,7 @@
     $_SESSION['sidebar'] = "dashboard";
 ?>
 <title>
-    PawsBook - Dashboard
+    SPCF Cashless - Dashboard
 </title>
 <body class="g-sidenav-show  bg-gray-200">
 

@@ -4,7 +4,7 @@
     $_SESSION['sidebar'] = "users";
 ?>
 <title>
-    PawsBook - Users
+    SPCF Cashless - Users
 </title>
 <body class="g-sidenav-show  bg-gray-200">
   <?php include("aside.php"); ?>

@@ -8,7 +8,7 @@
     $host = 'localhost';
     $username = 'root';
     $password = '';
-    $database = 'pawsbook_database';
+    $database = 'spcf_cashless_db';
 
     $mysqli = new mysqli($host,$username,$password,$database) or die(mysqli_error($mysqli));
 

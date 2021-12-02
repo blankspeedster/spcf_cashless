@@ -41,13 +41,12 @@
 
     //Process Registration
     if(isset($_POST['register_account'])){
-        $role = $_POST['role'];
         $fname = ucfirst($_POST['fname']);
         $lname = ucfirst($_POST['lname']);
         $email = strtolower($_POST['email']);
         $phone_number = $_POST['phone_number'];
         $password = $_POST['password'];
-
+        $role = 2;
         $password = password_hash($password, PASSWORD_DEFAULT);
 
         $checkUser = $mysqli->query("SELECT * FROM users WHERE email='$email' ");

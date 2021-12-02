@@ -14,7 +14,7 @@
   <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <title>
-    PawsBook - Register Account
+    SPCF Cashless - Register Account
   </title>
   <!--     Fonts and icons     -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
@@ -68,12 +68,12 @@
                 <div class="card-body">
                   <form role="form" action="process_registration.php" method="post">
                   <div class="input-group input-group-static mb-4">
-                      <label for="formControlSelectRole" class="ms-0">Signing up for: </label>
-                      <select class="form-control" id="formControlSelectRole" name="role" required>
-                          <option value="" disabled selected>Select</option>
-                          <option value="2">User</option>
-                          <option value="3">Clinic</option>
-                      </select>
+<!--                      <label for="formControlSelectRole" class="ms-0">Signing up for: </label>-->
+<!--                      <select class="form-control" id="formControlSelectRole" name="role" required>-->
+<!--                          <option value="" disabled selected>Select</option>-->
+<!--                          <option value="2">User</option>-->
+<!--                          <option value="3">Clinic</option>-->
+<!--                      </select>-->
                     </div>
                     <div class="input-group input-group-static mb-3">
                       <label class="form-label">First Name</label>
