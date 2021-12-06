@@ -36,7 +36,7 @@
           <?php if(isset($_SESSION['registerError'])){ ?>
           <!-- Alert Here -->
           <!-- Navbar -->
-          <nav class="navbar navbar-expand-lg blur border-radius-xl top-0 z-index-3 shadow position-absolute my-3 py-2 start-0 end-0 mx-4">
+          <nav class="navbar navbar-expand-lg blur-gradient-primary border-radius-xl top-0 z-index-3 shadow position-absolute my-3 py-2 start-0 end-0 mx-4">
               <div class="container-fluid ps-2 pe-0">
                   <?php
                   echo $_SESSION['registerError'];
@@ -56,7 +56,7 @@
         <div class="container">
           <div class="row">
             <div class="col-6 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 start-0 text-center justify-content-center flex-column">
-              <div class="position-relative bg-gradient-success h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center" style="background-image: url('assets/img/signup.jpg'); background-size: cover;">
+              <div class="position-relative bg-gradient-info h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center" style="background-image: url('assets/img/signup.svg'); background-size: cover;">
               </div>
             </div>
             <div class="col-xl-4 col-lg-5 col-md-7 d-flex flex-column ms-auto me-auto ms-lg-auto me-lg-5">
@@ -75,6 +75,10 @@
 <!--                          <option value="3">Clinic</option>-->
 <!--                      </select>-->
                     </div>
+                  <div class="input-group input-group-static mb-3">
+                      <label class="form-label">Student ID</label>
+                      <input type="number" class="form-control" value="<?php if(isset($_GET['student_id'])){echo $_GET['student_id'];} ?>" name="student_id" required>
+                  </div>
                     <div class="input-group input-group-static mb-3">
                       <label class="form-label">First Name</label>
                       <input type="text" class="form-control" value="<?php if(isset($_GET['fname'])){echo $_GET['fname'];} ?>" name="fname" required>
@@ -108,14 +112,14 @@
                       </label>
                     </div>
                     <div class="text-center">
-                      <button type="submit" name="register_account" id="register_account" class="btn btn-lg bg-gradient-success btn-lg w-100 mt-4 mb-0">Sign Up</button>
+                      <button type="submit" name="register_account" id="register_account" class="btn btn-lg bg-gradient-info btn-lg w-100 mt-4 mb-0">Sign Up</button>
                     </div>
                   </form>
                 </div>
                 <div class="card-footer text-center pt-0 px-lg-2 px-1">
                   <p class="mb-2 text-sm mx-auto">
                     Already have an account?
-                    <a href="sign-in.php" class="text-success text-gradient font-weight-bold">Sign in</a>
+                    <a href="sign-in.php" class="text-info text-gradient font-weight-bold">Sign in</a>
                   </p>
                 </div>
               </div>

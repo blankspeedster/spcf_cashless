@@ -42,7 +42,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn bg-gradient-danger" data-bs-dismiss="modal">Cancel</button>
-                <a href="logout.php" type="button" class="btn bg-gradient-success">Log Out</a>
+                <a href="logout.php" type="button" class="btn bg-gradient-info">Log Out</a>
             </div>
         </div>
     </div>
