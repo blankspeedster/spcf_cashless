@@ -26,6 +26,7 @@
                     header("location: sign-in.php?email=".$email);
                 }
                 else{
+                    $_SESSION['user_id'] = $newCheckUser["id"];
                     $_SESSION['email'] = $newCheckUser["email"];
                     $_SESSION['firstname'] = $newCheckUser["firstname"];
                     $_SESSION['lastname'] = $newCheckUser["lastname"];
