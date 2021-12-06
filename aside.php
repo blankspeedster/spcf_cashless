@@ -66,7 +66,7 @@
           <h6 class="ps-4 ms-2 text-uppercase text-xs text-black-50 font-weight-bolder opacity-8">Account pages</h6>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-black-50 " href="./pages/profile.html">
+          <a class="nav-link text-black-50 <?php if($_SESSION['sidebar'] == "profile"){echo "active bg-gradient-info";} ?>" href="profile.php">
             <div class="text-black-50 text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">person</i>
             </div>

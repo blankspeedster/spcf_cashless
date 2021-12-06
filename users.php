@@ -64,7 +64,7 @@
                                   <img src="assets/img/profile-picture/dp.png" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
                               </div>
                               <div class="d-flex flex-column justify-content-center">
-                                  <h6 class="mb-0 text-sm"><?php echo $user["firstname"]." ".$user["lastname"]; ?></h6>
+                                  <h6 class="mb-0 text-sm"><a href="profile.php?user=<?php echo $user['id'];?>" target="_blank"><?php echo $user["firstname"]." ".$user["lastname"]; ?></a></h6>
                                   <p class="text-xs text-secondary mb-0"><?php echo $user['email']; ?></p>
                               </div>
                           </div>
@@ -118,15 +118,15 @@
                               </button>
                               <div class="dropdown-menu shadow-info">
                                   <?php if($user['validated'] != 1){ ?>
-                                    <a class="dropdown-item" href="process_users.php?validate=<?php echo $user['id'];?>">Validate</a>
+                                    <a class="dropdown-item" href="process_users.php?validate_user=<?php echo $user['user_id'];?>">Validate</a>
                                   <?php } ?>
-                                  <a class="dropdown-item" href="users.php?edit_user=<?php echo $user['id'];?>">Edit Information</a>
-                                  <a class="dropdown-item" href="profile.php?user=<?php echo $user['id'];?>">View Profile</a>
+                                  <a class="dropdown-item" href="users.php?edit_user=<?php echo $user['user_id'];?>">Edit Information</a>
+                                  <a class="dropdown-item" href="profile.php?user=<?php echo $user['user_id'];?>" target="_blank">View Profile</a>
                                   <button class="dropdown-item" data-toggle="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Delete</button>
                                   <div class="dropdown-menu shadow-danger mb-1">
-                                      <span class="dropdown-item">Confirm Deletion? You cannot undo the changes!</span>
+                                      <span class="dropdown-item">All information related to this user will be permanent. You cannot undo the changes. Confirm Deletion?</span>
                                       <a class="dropdown-item text-info" href="#">Cancel</a>
-                                      <a class="dropdown-item text-danger" href="process_users.php?delete_user=<?php echo $user['id'];?>">Confirm Delete</a>
+                                      <a class="dropdown-item text-danger" href="process_users.php?delete_user=<?php echo $user['user_id'];?>">Confirm Delete</a>
                                   </div>
                               </div>
                           </div>
@@ -145,7 +145,6 @@
       </div>
 
       <?php include("footer.php");?>
-<!--        Modal Delete-->
 
     </div>
   </main>

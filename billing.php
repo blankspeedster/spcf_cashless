@@ -1,4 +1,5 @@
 <?php
+    require_once("process_billing.php");
     include("head.php");
     $_SESSION['sidebar'] = "billing";
 ?>
