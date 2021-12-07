@@ -38,30 +38,34 @@
             <span class="nav-link-text ms-1">Billing</span>
           </a>
         </li>
-        <li class="nav-item">
+
+        <!-- <li class="nav-item">
           <a class="nav-link text-black-50 " href="./pages/virtual-reality.html">
             <div class="text-black-50 text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">view_in_ar</i>
             </div>
             <span class="nav-link-text ms-1">Virtual Reality</span>
           </a>
-        </li>
-        <li class="nav-item">
+        </li> -->
+
+        <!-- <li class="nav-item">
           <a class="nav-link text-black-50 " href="./pages/rtl.html">
             <div class="text-black-50 text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">format_textdirection_r_to_l</i>
             </div>
             <span class="nav-link-text ms-1">RTL</span>
           </a>
-        </li>
-        <li class="nav-item">
+        </li> -->
+
+        <!-- <li class="nav-item">
           <a class="nav-link text-black-50 " href="./pages/notifications.html">
             <div class="text-black-50 text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">notifications</i>
             </div>
             <span class="nav-link-text ms-1">Notifications</span>
           </a>
-        </li>
+        </li> -->
+
         <li class="nav-item mt-3">
           <h6 class="ps-4 ms-2 text-uppercase text-xs text-black-50 font-weight-bolder opacity-8">Account pages</h6>
         </li>
@@ -73,22 +77,25 @@
             <span class="nav-link-text ms-1">Profile</span>
           </a>
         </li>
-        <li class="nav-item">
+
+        <!-- <li class="nav-item">
           <a class="nav-link text-black-50 " href="./pages/sign-in.html">
             <div class="text-black-50 text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">login</i>
             </div>
             <span class="nav-link-text ms-1">Sign In</span>
           </a>
-        </li>
-        <li class="nav-item">
+        </li> -->
+
+        <!-- <li class="nav-item">
           <a class="nav-link text-black-50 " href="./pages/sign-up.html">
             <div class="text-black-50 text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">assignment</i>
             </div>
             <span class="nav-link-text ms-1">Sign Up</span>
           </a>
-        </li>
+        </li> -->
+
       </ul>
     </div>
 <!--    <div class="sidenav-footer position-absolute w-100 bottom-0 ">-->
