@@ -22,7 +22,6 @@
           <div class="col-12">
               <?php if(isset($_SESSION['userError'])){ ?>
                   <!-- Alert Here -->
-                  <!-- Navbar -->
                   <nav class="navbar navbar-expand-lg border-radius-xl top-0 z-index-3 shadow position-absolute my-3 py-2 start-0 end-0 mx-4 blur-danger">
                       <div class="container-fluid ps-2 pe-0">
                           <?php
@@ -31,7 +30,6 @@
                           ?>
                       </div>
                   </nav>
-                  <!-- End Navbar -->
                   <!-- End Here -->
               <?php } ?>
           </div>

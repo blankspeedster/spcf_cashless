@@ -5,6 +5,7 @@
 
 <!--Vue Support-->
 <script src="./assets/js/vue/vue.min.js"></script>
+
 <!--   Core JS Files   -->
 <script src="./assets/js/core/bootstrap.min.js"></script>
 <script src="./assets/js/plugins/perfect-scrollbar.min.js"></script>

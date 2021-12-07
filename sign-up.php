@@ -1,9 +1,9 @@
 <?php
-    require_once('process_registration.php');
+require_once('process_registration.php');
 
-    if(isset($_SESSION['email'])){
-        header('location: index.php');
-    }
+if (isset($_SESSION['email'])) {
+  header('location: index.php');
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -33,20 +33,20 @@
   <div class="container position-sticky z-index-sticky top-0">
     <div class="row">
       <div class="col-12">
-          <?php if(isset($_SESSION['registerError'])){ ?>
+        <?php if (isset($_SESSION['registerError'])) { ?>
           <!-- Alert Here -->
           <!-- Navbar -->
           <nav class="navbar navbar-expand-lg blur border-radius-xl top-0 z-index-3 shadow position-absolute my-3 py-2 start-0 end-0 mx-4">
-              <div class="container-fluid ps-2 pe-0">
-                  <?php
-                  echo $_SESSION['registerError'];
-                  unset($_SESSION['registerError']);
-                  ?>
-              </div>
+            <div class="container-fluid ps-2 pe-0">
+              <?php
+              echo $_SESSION['registerError'];
+              unset($_SESSION['registerError']);
+              ?>
+            </div>
           </nav>
           <!-- End Navbar -->
           <!-- End Here -->
-          <?php } ?>
+        <?php } ?>
       </div>
     </div>
   </div>
@@ -67,33 +67,43 @@
                 </div>
                 <div class="card-body">
                   <form role="form" action="process_registration.php" method="post">
-                  <div class="input-group input-group-static mb-4">
-<!--                      <label for="formControlSelectRole" class="ms-0">Signing up for: </label>-->
-<!--                      <select class="form-control" id="formControlSelectRole" name="role" required>-->
-<!--                          <option value="" disabled selected>Select</option>-->
-<!--                          <option value="2">User</option>-->
-<!--                          <option value="3">Clinic</option>-->
-<!--                      </select>-->
+                    <div class="input-group input-group-static mb-4">
+                      <!--                      <label for="formControlSelectRole" class="ms-0">Signing up for: </label>-->
+                      <!--                      <select class="form-control" id="formControlSelectRole" name="role" required>-->
+                      <!--                          <option value="" disabled selected>Select</option>-->
+                      <!--                          <option value="2">User</option>-->
+                      <!--                          <option value="3">Clinic</option>-->
+                      <!--                      </select>-->
                     </div>
-                  <div class="input-group input-group-static mb-3">
+                    <div class="input-group input-group-static mb-3">
                       <label class="form-label">Student ID</label>
-                      <input type="number" class="form-control" value="<?php if(isset($_GET['student_id'])){echo $_GET['student_id'];} ?>" name="student_id" required>
-                  </div>
+                      <input type="number" class="form-control" value="<?php if (isset($_GET['student_id'])) {
+                                                                          echo $_GET['student_id'];
+                                                                        } ?>" name="student_id" required>
+                    </div>
                     <div class="input-group input-group-static mb-3">
                       <label class="form-label">First Name</label>
-                      <input type="text" class="form-control" value="<?php if(isset($_GET['fname'])){echo $_GET['fname'];} ?>" name="fname" required>
+                      <input type="text" class="form-control" value="<?php if (isset($_GET['fname'])) {
+                                                                        echo $_GET['fname'];
+                                                                      } ?>" name="fname" required>
                     </div>
                     <div class="input-group input-group-static mb-3">
                       <label class="form-label">Last Name</label>
-                      <input type="text" class="form-control" value="<?php if(isset($_GET['lname'])){echo $_GET['lname'];} ?>" name="lname" required>
+                      <input type="text" class="form-control" value="<?php if (isset($_GET['lname'])) {
+                                                                        echo $_GET['lname'];
+                                                                      } ?>" name="lname" required>
                     </div>
                     <div class="input-group input-group-static mb-3">
                       <label class="form-label">Email</label>
-                      <input type="email" class="form-control" value="<?php if(isset($_GET['email'])){echo $_GET['email'];} ?>" name="email" required>
+                      <input type="email" class="form-control" value="<?php if (isset($_GET['email'])) {
+                                                                        echo $_GET['email'];
+                                                                      } ?>" name="email" required>
                     </div>
                     <div class="input-group input-group-static mb-3">
                       <label class="form-label">Phone</label>
-                      <input type="number" class="form-control" value="<?php if(isset($_GET['phone_number'])){echo $_GET['phone_number'];} ?>" name="phone_number" required>
+                      <input type="number" class="form-control" value="<?php if (isset($_GET['phone_number'])) {
+                                                                          echo $_GET['phone_number'];
+                                                                        } ?>" name="phone_number" required>
                     </div>
                     <div class="input-group input-group-static mb-3">
                       <label class="form-label">Password</label>
@@ -130,35 +140,33 @@
     </section>
   </main>
   <script>
-      document.getElementById("register_account").disabled = true;
-      let checkPasswords = function() {
-          console.log('Checking passwords here');
-          if(document.getElementById('password').value == ""){
-              document.getElementById('password-message').innerHTML = 'Password is empty';
-          }
-          else if(document.getElementById('password').value == document.getElementById('confirm_password').value){
-              document.getElementById('password-message').style.color = 'green';
-              document.getElementById('password-message').innerHTML = 'Passwords matched';
-              document.getElementById("register_account").disabled = false;
-          }
-          else{
-              document.getElementById('password-message').style.color = 'red';
-              document.getElementById('password-message').innerHTML = 'Passwords do not match!';
-              document.getElementById("register_account").disabled = true;
-          }
-
-          setTimeout(checkPasswords, 500);
+    document.getElementById("register_account").disabled = true;
+    let checkPasswords = function() {
+      console.log('Checking passwords here');
+      if (document.getElementById('password').value == "") {
+        document.getElementById('password-message').innerHTML = 'Password is empty';
+      } else if (document.getElementById('password').value == document.getElementById('confirm_password').value) {
+        document.getElementById('password-message').style.color = 'green';
+        document.getElementById('password-message').innerHTML = 'Passwords matched';
+        document.getElementById("register_account").disabled = false;
+      } else {
+        document.getElementById('password-message').style.color = 'red';
+        document.getElementById('password-message').innerHTML = 'Passwords do not match!';
+        document.getElementById("register_account").disabled = true;
       }
 
-      checkPasswords();
+      setTimeout(checkPasswords, 500);
+    }
 
-      var win = navigator.platform.indexOf('Win') > -1;
-      if (win && document.querySelector('#sidenav-scrollbar')) {
-          var options = {
-              damping: '0.5'
-          }
-          Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+    checkPasswords();
+
+    var win = navigator.platform.indexOf('Win') > -1;
+    if (win && document.querySelector('#sidenav-scrollbar')) {
+      var options = {
+        damping: '0.5'
       }
+      Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+    }
   </script>
   <!--   Core JS Files   -->
   <script src="assets/js/core/popper.min.js"></script>
