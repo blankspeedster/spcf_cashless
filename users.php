@@ -68,34 +68,34 @@ if (isset($_GET['edit_user'])) {
                     <div class="col-md-6">
                       <div class="input-group input-group-static mb-4">
                         Student ID
-                        <input type="number" class="form-control" value="<?php if(!$isAdding){echo $user['student_id'];} ?>" name="student_id" required>
+                        <input type="number" class="form-control" value="<?php if(!$isAdding){echo $user['student_id'];}else if(isset($_GET['student_id'])){echo $_GET['student_id']; } ?>" name="student_id" required>
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="input-group input-group-static mb-4">
                         First Name
-                        <input type="text" class="form-control" value="<?php if(!$isAdding){echo $user['firstname'];} ?>" name="fname" required>
+                        <input type="text" class="form-control" value="<?php if(!$isAdding){echo $user['firstname'];}else if(isset($_GET['fname'])){echo $_GET['fname']; } ?>" name="fname" required>
                       </div>
                     </div>
 
                     <div class="col-md-6">
                       <div class="input-group input-group-static mb-4">
                         Last Name
-                        <input type="text" class="form-control" value="<?php if(!$isAdding){echo $user['lastname'];} ?>" name="lname" required>
+                        <input type="text" class="form-control" value="<?php if(!$isAdding){echo $user['lastname'];}else if(isset($_GET['lname'])){echo $_GET['lname']; } ?>" name="lname" required>
                       </div>
                     </div>
 
                     <div class="col-md-6">
                       <div class="input-group input-group-static mb-4">
                         Email Address
-                        <input type="email" class="form-control" value="<?php if(!$isAdding){echo $user['email'];} ?>" name="email" required>
+                        <input type="email" class="form-control" value="<?php if(!$isAdding){echo $user['email'];}else if(isset($_GET['email'])){echo $_GET['email']; } ?>" name="email" required>
                       </div>
                     </div>
 
                     <div class="col-md-6">
                       <div class="input-group input-group-static mb-4">
                         Phone Number
-                        <input type="number" class="form-control" value="<?php if(!$isAdding){echo $user['phone_number'];} ?>" name="phone_number" required>
+                        <input type="number" class="form-control" value="<?php if(!$isAdding){echo $user['phone_number'];}else if(isset($_GET['phone_number'])){echo $_GET['phone_number']; } ?>" name="phone_number" required>
                       </div>
                     </div>
                     <?php if ($isAdding) { ?>
