@@ -200,6 +200,7 @@ if (isset($_GET['edit_user'])) {
                             <?php } ?>
                             <a class="dropdown-item" href="users.php?edit_user=<?php echo $user['user_id']; ?>">Edit Information</a>
                             <a class="dropdown-item" href="profile.php?user=<?php echo $user['user_id']; ?>" target="_blank">View Profile</a>
+                            <a class="dropdown-item" href="card.php?user=<?php echo $user['user_id']; ?>" target="_blank">Enroll Card</a>
                             <button class="dropdown-item" data-toggle="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Delete</button>
                             <div class="dropdown-menu shadow-danger mb-1">
                               <span class="dropdown-item">All information related to this user will be permanent. You cannot undo the changes. Confirm Deletion?</span>

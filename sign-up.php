@@ -63,7 +63,7 @@ if (isset($_SESSION['email'])) {
               <div class="card card-plain">
                 <div class="card-header">
                   <h4 class="font-weight-bolder">Sign Up</h4>
-                  <p class="mb-0">Enter your email and password to register</p>
+                  <p class="mb-0">Enter your details to register</p>
                 </div>
                 <div class="card-body">
                   <form role="form" action="process_registration.php" method="post">

@@ -2,6 +2,8 @@
     if(!isset($_SESSION['email'])){
         header("Location: sign-in.php");
     }
+
+    $role = $_SESSION['role'];
 ?>
 <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3 bg-white" id="sidenav-main">
     <div class="sidenav-header">
@@ -22,6 +24,7 @@
             <span class="nav-link-text ms-1">Dashboard</span>
           </a>
         </li>
+        <?php if($role == 1){ ?>
         <li class="nav-item">
           <a class="nav-link text-black-50 <?php if($_SESSION['sidebar'] == "users"){echo "active bg-gradient-info";} ?>" href="users.php">
             <div class="text-black-50 text-center me-2 d-flex align-items-center justify-content-center">
@@ -30,6 +33,7 @@
             <span class="nav-link-text ms-1">Users</span>
           </a>
         </li>
+        <?php } ?>
         <li class="nav-item">
           <a class="nav-link text-black-50 <?php if($_SESSION['sidebar'] == "billing"){echo "active bg-gradient-info";} ?>" href="billing.php">
             <div class="text-black-50 text-center me-2 d-flex align-items-center justify-content-center">
