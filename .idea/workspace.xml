@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6f90886a-6dcd-45ee-82f1-777ab7c3bdeb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-js-files.php" beforeDir="false" afterPath="$PROJECT_DIR$/core-js-files.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/profile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sign-up.php" beforeDir="false" afterPath="$PROJECT_DIR$/sign-up.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +36,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pawsbook" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -69,6 +66,8 @@
       <workItem from="1638443996332" duration="557000" />
       <workItem from="1638751486417" duration="19058000" />
       <workItem from="1638834726273" duration="3136000" />
+      <workItem from="1638930380432" duration="613000" />
+      <workItem from="1638938152345" duration="10000" />
     </task>
     <servers />
   </component>

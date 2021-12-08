@@ -60,7 +60,7 @@ if (isset($_GET['edit_user'])) {
                           <option value="" disabled selected>Select</option>
                           <option value="1">Admin</option>
                           <option value="2">Student</option>
-                          <option value="2">Vendor</option>
+                          <option value="3">Vendor</option>
                         </select>
                       </div>
                     </div>
