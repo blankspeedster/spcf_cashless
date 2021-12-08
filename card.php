@@ -57,10 +57,10 @@ $isAdding = true;
                                         <div class="col-md-12">
                                             <div class="input-group input-group-static mb-4">
                                                 To enroll, make sure that the cursor is in the field below. Then simply tap the card. The registration will take place automatically.
-                                                <input type="number" class="form-control" name="tag_number" required>
+                                                <input type="number" class="form-control" name="tag_number" id="tag_number" required>
                                             </div>
                                         </div>
-                                        <input type="text" style="visibility: hidden;" name="user_id" value="<?php echo $current_user; ?>">
+                                        <input type="text" style="visibility: hidden;" name="user_id" id="user_id" value="<?php echo $current_user; ?>">
                                         <div class="col-md-12 text-end">
                                             <button class="btn btn-info" type="submit" name="save_rfid"><i class="far fa-save"></i> Enroll Card</button>
                                         </div>
@@ -125,7 +125,7 @@ $isAdding = true;
                                                             <div class="dropdown-menu shadow-danger mb-1">
                                                                 <span class="dropdown-item">This card will be deleted permanently and you cannot undo the changes. Confirm Deletion?</span>
                                                                 <a class="dropdown-item text-info" href="#">Cancel</a>
-                                                                <a class="dropdown-item text-danger" href="process_card.php?delete_card=<?php echo $card['id'].'&user_id='.$current_user; ?>">Confirm Delete</a>
+                                                                <a class="dropdown-item text-danger" href="process_card.php?delete_card=<?php echo $card['id'] . '&user_id=' . $current_user; ?>">Confirm Delete</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -152,6 +152,8 @@ $isAdding = true;
     <?php //include("fixed-plugin.php"); 
     ?>
     <?php include("core-js-files.php"); ?>
+    <script>
+    </script>
 </body>
 
 </html>
